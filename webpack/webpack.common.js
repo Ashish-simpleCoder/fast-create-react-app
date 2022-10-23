@@ -123,6 +123,17 @@ const commonConfig = {
                 use: [stylesHandler, 'css-loader', 'sass-loader']
             },
 
+
+            // images loaders
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/[name][ext]'
+                }
+            },
+
+
         ]
     }
 }

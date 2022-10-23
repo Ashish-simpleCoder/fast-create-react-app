@@ -1,5 +1,7 @@
 import { useState } from "react"
 import "./style/index.scss"
+import Car from './assets/car.jpg'
+
 
 function App(){
     const [c, setC] = useState(0)
@@ -9,6 +11,7 @@ function App(){
             <h1>Fast CRA</h1>
             <h3>counter - {c}</h3>
             <button onClick={() => setC(v => v+1)}>increment</button>
+            <img src={Car} alt="" />
         </div>
     )
 }
