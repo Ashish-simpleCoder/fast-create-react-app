@@ -20,8 +20,8 @@
     "with",
     "webpack"
   ],
-  "author": "Ashish-simpleCoder",
-  "license": "ISC",
+  "author": "Ashish Prajapati <ashishprajapati357753357@gmail.com> (https://github.com/Ashish-simpleCoder)",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.19.6",
     "@babel/preset-env": "^7.19.4",
