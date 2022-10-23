@@ -1,7 +1,20 @@
 {
    "compilerOptions": {
+      "target": "ES5",
+      "lib": [
+         "DOM",
+         "ESNext"
+      ],
+      "moduleResolution": "node",
+      "module": "commonjs",
+      "baseUrl": "./src",
       "checkJs": true,
       "alwaysStrict": true,
-      "jsx": "react-jsx"
+      "jsx": "react-jsx",
+      "paths": {
+         "@comp/*": [
+            "./components/*"
+         ]
+      }
    }
 }

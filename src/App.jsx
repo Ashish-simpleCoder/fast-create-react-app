@@ -1,11 +1,14 @@
-import { useState } from "react"
-import "./style/index.scss"
-import Car from './asset/car.jpg'
-import Header from "./components/Header"
+import { useEffect, useState } from "react"
+import "style/index.scss"
+import Car from 'asset/car.jpg'
+import Header from "@comp/Header"
 
 
 function App(){
     const [c, setC] = useState(0)
+    useEffect(() => {
+        console.log('awesome')
+    }, [])
 
     return(
         <div>
