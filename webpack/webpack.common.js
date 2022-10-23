@@ -2,6 +2,7 @@
 const fs = require('fs')
 const path = require('path')
 const paths = require('./config/path')
+const { loader: MiniCssExtractPluginLoader } = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const Dotenv = require('dotenv-webpack')
 const { ProvidePlugin } = require('webpack')
@@ -10,7 +11,8 @@ const { ProvidePlugin } = require('webpack')
 // getting the environment mode
 const isProduction = process.env.NODE_ENV == 'production'
 
-
+// getting css extractor in production mode
+const stylesHandler = isProduction ? MiniCssExtractPluginLoader : 'style-loader'
 
 // getting the absolute path -> utililty functions
 const appDirectory = fs.realpathSync(process.cwd())
@@ -109,6 +111,16 @@ const commonConfig = {
                 loader: 'babel-loader',
                 include: paths.appSrc,
                 exclude: /node_modules/
+            },
+
+            // styles/css loader
+            {
+                test: /\.css$/i,
+                use: [stylesHandler, 'css-loader'], //can also give object as elements,
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [stylesHandler, 'css-loader', 'sass-loader']
             },
 
         ]

@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import "./style/index.scss"
 
 function App(){
     const [c, setC] = useState(0)
