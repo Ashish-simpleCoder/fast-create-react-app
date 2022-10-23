@@ -1,0 +1,21 @@
+{
+  "name": "fast-create-react-app",
+  "version": "1.0.0",
+  "description": "A very fast version of Create-React-App(CRA) with Typescript and ESlint support",
+  "main": "index.jsx",
+  "scripts": {},
+  "keywords": [
+    "create-react-app",
+    "typescript",
+    "cra",
+    "react-app",
+    "webpack",
+    "react",
+    "cra",
+    "eslint",
+    "with",
+    "webpack"
+  ],
+  "author": "Ashish Prajapati <ashishprajapati357753357@gmail.com> (https://github.com/Ashish-simpleCoder)",
+  "license": "MIT"
+}
