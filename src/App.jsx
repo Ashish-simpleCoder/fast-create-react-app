@@ -1,7 +1,7 @@
 import { useState } from "react"
-import "./style/index.scss"
-import Car from './asset/car.jpg'
-import Header from "./components/Header"
+import "style/index.scss"
+import Car from 'asset/car.jpg'
+import Header from "components/Header"
 
 
 function App(){
