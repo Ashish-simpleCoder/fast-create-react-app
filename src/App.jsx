@@ -1,6 +1,6 @@
 import { useState } from "react"
 import "./style/index.scss"
-import Car from './assets/car.jpg'
+import Car from './asset/car.jpg'
 
 
 function App(){
