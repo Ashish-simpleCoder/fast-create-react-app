@@ -11,12 +11,16 @@ const { ProvidePlugin } = require('webpack')
 // getting the environment mode
 const isProduction = process.env.NODE_ENV == 'production'
 
+
 // getting css extractor in production mode
 const stylesHandler = isProduction ? MiniCssExtractPluginLoader : 'style-loader'
+
 
 // getting the absolute path -> utililty functions
 const appDirectory = fs.realpathSync(process.cwd())
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath)
+
+
 
 
 /** @type {Configuration} */
