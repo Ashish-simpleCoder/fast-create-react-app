@@ -6,6 +6,7 @@ const { loader: MiniCssExtractPluginLoader } = require('mini-css-extract-plugin'
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const Dotenv = require('dotenv-webpack')
 const { ProvidePlugin } = require('webpack')
+const modules = require('./config/modules')
 
 
 // getting the environment mode
@@ -64,6 +65,9 @@ const commonConfig = {
         modules: [
             resolveApp('src'), 'node_modules'
         ],
+        alias: {
+            ...(modules.webpackAliases)
+        }
     },
 
 

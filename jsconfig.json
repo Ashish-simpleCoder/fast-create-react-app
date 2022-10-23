@@ -3,6 +3,11 @@
       "baseUrl": "./src",
       "checkJs": true,
       "alwaysStrict": true,
-      "jsx": "react-jsx"
+      "jsx": "react-jsx",
+      "paths": {
+         "@comp/*": [
+            "./components/*"
+         ]
+      }
    }
 }
