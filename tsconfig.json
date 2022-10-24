@@ -3,10 +3,11 @@
       "target": "ES5",
       "lib": [
          "DOM",
-         "ESNext"
+         "ESNext",
+         "DOM.Iterable"
       ],
       "moduleResolution": "node",
-      "module": "commonjs",
+      "module": "esnext",
       "baseUrl": "./src",
       "checkJs": true,
       "alwaysStrict": true,
@@ -16,9 +17,15 @@
             "./components/*"
          ]
       },
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
       "forceConsistentCasingInFileNames": true,
       "strict": true,
       "noUnusedLocals": false,
-      "skipLibCheck": true
+      "skipLibCheck": true,
+      "isolatedModules": true,
+      "resolveJsonModule": true,
+      "noEmit": true,
+      "incremental": true
    }
 }

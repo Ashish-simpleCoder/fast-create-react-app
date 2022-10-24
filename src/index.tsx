@@ -1,12 +1,12 @@
-import {createRoot} from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
 import App from './App'
 
-const root = createRoot(document.getElementById('root'))
+const root = createRoot(document.getElementById('root') as HTMLDivElement)
 
 
-if(process.env.NODE_ENV == 'development'){
-   const {StrictMode} = require('react')
+if (process.env.NODE_ENV == 'development') {
+   const { StrictMode } = require('react')
    root.render(<StrictMode><App /></StrictMode>)
-}else{
+} else {
    root.render(<App />)
 }
