@@ -9,7 +9,8 @@ Now save your time by using this template for production/development a react-app
 ## Features
 ---
 - React-Refresh/Hot Loader support
-- React-Javascript support inbuilt
+- React-Javascript/Typescript support inbuilt
+- Checking Typescript code inn runtime
 - Html template
 - Env file support
 - Absolute Path support for imports
